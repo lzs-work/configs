@@ -1,18 +1,17 @@
-spring：
-   profiles:dev   #开发环境
-   application:
-    name:cloud-provider-dev
-        
-----
-
-spring： 
-  profiles:dev   #开发环境
+spring:
+  profiles: dev   # 开发环境
   application:
-   name:cloud-provider-devrovider-test
-----
+    name: cloud-provider-dev
+---
 
-
-spring：
-  profiles:
+spring:
+  profiles: test   #测试环境
   application:
-    name:cloud-provider-devrovider-pro
+    name: cloud-provider-test
+---
+
+spring:
+  profiles:  pro   #生产环境
+  application:
+    name: cloud-provider-pro-
+  
