@@ -1,0 +1,18 @@
+spring：
+   profiles:dev   #开发环境
+   application:
+    name:cloud-provider-dev
+        
+----
+
+spring： 
+  profiles:dev   #开发环境
+  application:
+   name:cloud-provider-devrovider-test
+----
+
+
+spring：
+  profiles:
+  application:
+    name:cloud-provider-devrovider-pro
