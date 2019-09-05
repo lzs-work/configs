@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: cloud-config-client-8000
+  rabbitmq:
+    host: 192.168.157.232
+    port: 15672
+    username: guest
+    password: guest
+
+
+ 
+server:
+  port: 8888
+  
+management:
+  security: 
+    enabled: false
+ 
