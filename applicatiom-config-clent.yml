@@ -2,7 +2,7 @@ server:
   port: 8888
 spring:
   application:
-    name: config-client-8888
+    name: config-client-8888-sss
   cloud:
     bus:
       trace:
