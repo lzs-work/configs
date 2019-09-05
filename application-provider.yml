@@ -2,7 +2,7 @@ server:
   port: 9000
 spring:
   application:
-    name: consul-custom
+    name: consul-provider
   cloud:
     consul:
       host: 127.0.0.1
