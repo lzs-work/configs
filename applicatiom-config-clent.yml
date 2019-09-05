@@ -3,25 +3,20 @@ server:
 spring:
   application:
     name: config-client-8888
-#  rabbitmq:
-#    host: 127.0.0.1
-#    port: 15672
-#    username: guest
-#    password: guest
-#  cloud:
-#    bus:
-#      enabled: true
-#      trace:
-#        enabled: true
+  cloud:
+    bus:
+      trace:
+        enabled: true
+    config:
+      fail-fast: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    
 management:
   endpoints:
     web:
       exposure:
-        include: refresh,health,info
-  endpoint:
-    health:
-      show-details: always
-  server: # 指定actuator端口。如果不指定则与系统服务端口一致。建议修改
-    port: 8888
-  security:
-    enabled: false
+        include: bus-refresh
